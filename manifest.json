@@ -1,0 +1,31 @@
+{
+    "manifest_version": 3,
+    "name": "Jet-X",
+    "version": "1.0",
+    "description": "Facilita a interação dos atendentes com o chatbot integrado com IA do Chatbase.",
+    "permissions": [
+      "activeTab"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "Microsoft-Fluentui-Emoji-Flat-Robot-Flat.16.png",
+        "48": "Microsoft-Fluentui-Emoji-Flat-Robot-Flat.48.png",
+        "128": "Microsoft-Fluentui-Emoji-Flat-Robot-Flat.128.png"
+      }
+    },
+    "content_scripts": [
+      {
+        "matches": ["http://anneepde05-rdsm-site.rds.land/jetx*"],
+        "js": ["content.js"]
+      }
+    ],
+    "icons": {
+      "16": "Microsoft-Fluentui-Emoji-Flat-Robot-Flat.16.png",
+      "48": "Microsoft-Fluentui-Emoji-Flat-Robot-Flat.48.png",
+      "128": "Microsoft-Fluentui-Emoji-Flat-Robot-Flat.128.png"
+    }
+  }
