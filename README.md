@@ -1,42 +1,47 @@
-Descrição
-Jet-X é uma extensão para o Google Chrome projetada para facilitar a interação dos atendentes da Jetsales com um chatbot integrado com IA do Chatbase. A extensão se integra diretamente em páginas específicas, como a RD Station, para oferecer uma interface de chatbot rápida e acessível.
+### Jet-X Chrome Extension ###
 
-Funcionalidades
-Popup Personalizado: A extensão possui um popup que exibe um chatbot para interação rápida.
-Injeção de Conteúdo: Um iframe do chatbot é injetado diretamente nas páginas configuradas, oferecendo suporte constante.
-Ícones Personalizados: Ícones do Microsoft Fluent UI Emoji são usados para personalizar a interface da extensão.
-Estrutura do Projeto
-manifest.json: Define as configurações básicas, permissões e recursos da extensão.
-background.js: Script de segundo plano que registra eventos importantes, como a instalação da extensão.
-content.js: Script injetado em páginas específicas para adicionar um chatbot diretamente no conteúdo.
-popup.js: Gerencia a interface do popup da extensão, carregando um iframe do chatbot.
-popup.html: Define a estrutura HTML do popup, incluindo a área onde o chatbot é exibido.
-popup.css: Estilos personalizados para o popup da extensão.Jet-X Chrome Extension
-Descrição
-Jet-X é uma extensão para o Google Chrome projetada para facilitar a interação dos atendentes da Jetsales com um chatbot integrado com IA do Chatbase. A extensão se integra diretamente em páginas específicas, como a RD Station, para oferecer uma interface de chatbot rápida e acessível.
+## Descrição
+•Jet-X é uma extensão para Google Chrome criada para otimizar a interação dos atendentes da Jetsales com um chatbot alimentado por IA do Chatbase. 
+•A extensão oferece uma interface de chatbot rápida e acessível diretamente em páginas específicas, como a RD Station.
 
-Funcionalidades
-Popup Personalizado: A extensão possui um popup que exibe um chatbot para interação rápida.
-Injeção de Conteúdo: Um iframe do chatbot é injetado diretamente nas páginas configuradas, oferecendo suporte constante.
-Ícones Personalizados: Ícones do Microsoft Fluent UI Emoji são usados para personalizar a interface da extensão.
-Estrutura do Projeto
-manifest.json: Define as configurações básicas, permissões e recursos da extensão.
-background.js: Script de segundo plano que registra eventos importantes, como a instalação da extensão.
-content.js: Script injetado em páginas específicas para adicionar um chatbot diretamente no conteúdo.
-popup.js: Gerencia a interface do popup da extensão, carregando um iframe do chatbot.
-popup.html: Define a estrutura HTML do popup, incluindo a área onde o chatbot é exibido.
-popup.css: Estilos personalizados para o popup da extensão.
-Instalação
-Clone este repositório em sua máquina local:
-Navegue até o diretório do projeto
+## Funcionalidades
+- **Popup Personalizado:** Apresenta um popup para interação rápida com o chatbot.
+- **Injeção de Conteúdo:** Insere um iframe do chatbot diretamente nas páginas configuradas para suporte contínuo.
+- **Ícones Personalizados:** Utiliza ícones do Microsoft Fluent UI Emoji para personalizar a interface.
 
-Copiar código
-cd jet-x
-Adicione seu ID de chatbot e domínio no arquivo env.example.js:
-const ENV = {
-    BOT_ID: "seu-bot-id",
-    CHATBOT_DOMAIN: "seu-chatbot-domain"
-};
-Abra o Chrome e acesse chrome://extensions/.
-Ative o modo de desenvolvedor.
-Clique em "Carregar sem compactação" e selecione o diretório do projeto.
+## Estrutura do Projeto
+- **manifest.json:** Configurações básicas, permissões e recursos da extensão.
+- **background.js:** Script de segundo plano que lida com eventos importantes, como a instalação da extensão.
+- **content.js:** Script injetado em páginas específicas para adicionar o chatbot diretamente no conteúdo.
+- **popup.js:** Gerencia a interface do popup, carregando o iframe do chatbot.
+- **popup.html:** Estrutura HTML do popup, incluindo a área do chatbot.
+- **popup.css:** Estilos personalizados para o popup da extensão.
+
+## Instalação
+1. Clone o repositório em sua máquina local:
+    ```bash
+    git clone <URL-DO-REPOSITORIO>
+    ```
+2. Navegue até o diretório do projeto:
+    ```bash
+    cd jet-x
+    ```
+3. Configure seu ID de chatbot e domínio no arquivo `env.example.js`:
+    ```javascript
+    const ENV = {
+        BOT_ID: "seu-bot-id",
+        CHATBOT_DOMAIN: "seu-chatbot-domain"
+    };
+    ```
+4. Abra o Chrome e acesse `chrome://extensions/`.
+5. Ative o modo de desenvolvedor.
+6. Clique em "Carregar sem compactação" e selecione o diretório do projeto.
+
+## Observações
+- Certifique-se de substituir `"seu-bot-id"` e `"seu-chatbot-domain"` pelos valores reais fornecidos pelo Chatbase.
+- Teste a extensão para garantir que o chatbot apareça corretamente nas páginas configuradas.
+
+
+
+
+    
