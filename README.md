@@ -2,6 +2,7 @@
 
 ## Descrição
 •Jet-X é uma extensão para Google Chrome criada para otimizar a interação dos atendentes da Jetsales com um chatbot alimentado por IA do Chatbase. 
+
 •A extensão oferece uma interface de chatbot rápida e acessível diretamente em páginas específicas, como a RD Station.
 
 ## Funcionalidades
